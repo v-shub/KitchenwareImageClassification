@@ -1,0 +1,9 @@
+C:\Users\user\Desktop\Shubina\KitchenwareImage\KitchenwareImageClassification\obj\Debug\net6.0\KitchenwareImageClassification.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Shubina\KitchenwareImage\KitchenwareImageClassification\obj\Debug\net6.0\KitchenwareImageClassification.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Shubina\KitchenwareImage\KitchenwareImageClassification\obj\Debug\net6.0\KitchenwareImageClassification.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Shubina\KitchenwareImage\KitchenwareImageClassification\obj\Debug\net6.0\KitchenwareImageClassification.AssemblyInfo.cs
+C:\Users\user\Desktop\Shubina\KitchenwareImage\KitchenwareImageClassification\obj\Debug\net6.0\KitchenwareImageClassification.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Shubina\KitchenwareImage\KitchenwareImageClassification\obj\Debug\net6.0\KitchenwareImageClassification.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\Desktop\Shubina\KitchenwareImage\KitchenwareImageClassification\obj\Debug\net6.0\KitchenwareImageClassification.RazorAssemblyInfo.cache
+C:\Users\user\Desktop\Shubina\KitchenwareImage\KitchenwareImageClassification\obj\Debug\net6.0\KitchenwareImageClassification.RazorAssemblyInfo.cs
+C:\Users\user\Desktop\Shubina\KitchenwareImage\KitchenwareImageClassification\obj\Debug\net6.0\KitchenwareImageClassification.sourcelink.json

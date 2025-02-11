@@ -1,0 +1,32 @@
+﻿@page "/upload"
+
+<PageTitle>Image Classification</PageTitle>
+
+<h1>Image would be classified as: fork, knife, pan, pot, spoon</h1>
+
+<div style="margin-bottom: 20px; display: flex;">
+    <div>Select your file:</div>
+    <InputFile OnChange="Predict" />
+</div>
+
+<b>@Result  @Score</b>
+
+@code {
+    public string Result { get; set; } = null;
+    public decimal? Score { get; set; } = null;
+
+    public void Predict(InputFileChangeEventArgs e)
+    {
+        var browserFile = e.File;
+
+        var sampleData = new MLModel.ModelInput()
+            {
+                ImageSource = browserFile,
+            };
+
+        //Load model and predict output
+        var output = MLModel.Predict(sampleData);
+        Result = output.PredictedLabel;
+        Score = decimal.Round((decimal)(output.Score[0]) * 100, 2);
+    }
+}
