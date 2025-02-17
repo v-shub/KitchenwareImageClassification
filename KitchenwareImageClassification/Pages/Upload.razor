@@ -4,29 +4,69 @@
 
 <h1>Image would be classified as: fork, knife, pan, pot, spoon</h1>
 
-<div style="margin-bottom: 20px; display: flex;">
-    <div>Select your file:</div>
-    <InputFile OnChange="Predict" />
+<b>Select your file:</b>
+
+<div>
+    <InputFile @key=@(_inputFileId) OnChange="Predict" />
 </div>
 
-<b>@Result  @Score</b>
+@if (isLoading)
+{
+    <p>Uploading...</p>
+}
+
+<h3>@Result  @ScoreString </h3>
 
 @code {
-    public string Result { get; set; } = null;
-    public decimal? Score { get; set; } = null;
 
-    public void Predict(InputFileChangeEventArgs e)
+    private string _inputFileId = Guid.NewGuid().ToString();
+    private bool isLoading;
+    public string Result { get; set; } = null;
+    public string ScoreString { get; set; } = null;
+
+    public async Task Predict(InputFileChangeEventArgs e)
     {
+        isLoading = true;
         var browserFile = e.File;
 
         var sampleData = new MLModel.ModelInput()
             {
-                ImageSource = browserFile,
+                ImageSource = await UploadMedia(browserFile),
             };
 
         //Load model and predict output
         var output = MLModel.Predict(sampleData);
-        Result = output.PredictedLabel;
-        Score = decimal.Round((decimal)(output.Score[0]) * 100, 2);
+        var score = decimal.Round((decimal)(output.Score.Max()) * 100, 2);
+        isLoading = false;
+        if (score > 70)
+        {
+            Result = output.PredictedLabel;
+            ScoreString = score + " %";
+        }
+        else{
+            Result = "Incorrect image";
+            ScoreString = "";
+        }
+        _inputFileId = Guid.NewGuid().ToString();
+    }
+    public static async Task<byte[]> UploadMedia(IBrowserFile file)
+    {
+        var path = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString());
+
+        await using var fs = new FileStream(path, FileMode.Create);
+
+        await file.OpenReadStream(file.Size).CopyToAsync(fs);
+
+        var bytes = new byte[file.Size];
+
+        fs.Position = 0;
+
+        await fs.ReadAsync(bytes);
+
+        fs.Close();
+
+        File.Delete(path);
+
+        return bytes;
     }
 }

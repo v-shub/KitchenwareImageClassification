@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Shubina\\KitchenwareImage\\KitchenwareImageClassification\\KitchenwareImageClassification.csproj": {}
+    "C:\\Users\\victo\\OneDrive\\Рабочий стол\\Modules\\KitchenwareImageClassification\\KitchenwareImageClassification\\KitchenwareImageClassification.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Shubina\\KitchenwareImage\\KitchenwareImageClassification\\KitchenwareImageClassification.csproj": {
+    "C:\\Users\\victo\\OneDrive\\Рабочий стол\\Modules\\KitchenwareImageClassification\\KitchenwareImageClassification\\KitchenwareImageClassification.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Shubina\\KitchenwareImage\\KitchenwareImageClassification\\KitchenwareImageClassification.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\OneDrive\\Рабочий стол\\Modules\\KitchenwareImageClassification\\KitchenwareImageClassification\\KitchenwareImageClassification.csproj",
         "projectName": "KitchenwareImageClassification",
-        "projectPath": "C:\\Users\\user\\Desktop\\Shubina\\KitchenwareImage\\KitchenwareImageClassification\\KitchenwareImageClassification.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Shubina\\KitchenwareImage\\KitchenwareImageClassification\\obj\\",
+        "projectPath": "C:\\Users\\victo\\OneDrive\\Рабочий стол\\Modules\\KitchenwareImageClassification\\KitchenwareImageClassification\\KitchenwareImageClassification.csproj",
+        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\victo\\OneDrive\\Рабочий стол\\Modules\\KitchenwareImageClassification\\KitchenwareImageClassification\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/tgbots/Telegram.Bot/_packaging/release/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -42,7 +43,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -82,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

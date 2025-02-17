@@ -22,7 +22,7 @@ namespace KitchenwareImageClassification
 
             [LoadColumn(1)]
             [ColumnName(@"ImageSource")]
-            public IBrowserFile ImageSource { get; set; }
+            public byte[] ImageSource { get; set; }
 
         }
 
@@ -38,7 +38,7 @@ namespace KitchenwareImageClassification
             public uint Label { get; set; }
 
             [ColumnName(@"ImageSource")]
-            public IBrowserFile ImageSource { get; set; }
+            public byte[] ImageSource { get; set; }
 
             [ColumnName(@"PredictedLabel")]
             public string PredictedLabel { get; set; }

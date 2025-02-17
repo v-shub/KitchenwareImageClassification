@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KitchenwareImageClassification")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+562fb55c5aece5f268000877d6771c1e6e7cf110")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da9824ed8fa5f25f447eb1c94de701a99ecbce15")]
 [assembly: System.Reflection.AssemblyProductAttribute("KitchenwareImageClassification")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KitchenwareImageClassification")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
